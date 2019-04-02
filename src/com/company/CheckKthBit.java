@@ -13,8 +13,8 @@ public class CheckKthBit {
       System.out.println("yes");
     else
       System.out.println("No");
-
-
   }
 }
+
+
 
