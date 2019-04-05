@@ -1,5 +1,8 @@
 package BinaryTree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class InOrderTraversal {
 
   static class Node{
@@ -59,7 +62,7 @@ public class InOrderTraversal {
     root.right = new Node(3);
     root.left.left = new Node(4);
     root.left.right = new Node(5);
-    
+
     System.out.println("Inorder Traversal : ");
     InOrder(root);
 
@@ -68,7 +71,37 @@ public class InOrderTraversal {
 
     System.out.println("Postorder Traversal : ");
     PostOrder(root);
+
+    System.out.println("Inserting an element to binary tree");
+    int key = 12;
+    insertion(root,key);
+
+    System.out.println("After Insertion");
+    InOrder(root);
   }
 
+  private static void insertion(Node root, int key) {
+    Queue<Node> q = new LinkedList<Node>();
+    q.add(root);
 
+    Node temp;
+
+    while (!q.isEmpty()) {
+      temp = q.peek();
+      q.remove();
+
+      if (temp.left == null) {
+        temp.left = new Node(key);
+        break;
+      } else
+        q.add(temp.left);
+
+      if (temp.right == null) {
+        temp.right = new Node(key);
+        break;
+      } else
+        q.add(temp.right);
+    }
+
+  }
 }
