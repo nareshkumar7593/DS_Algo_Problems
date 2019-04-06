@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class HeapInsertion {
 
   public static void main(String[] args) {
-  int[] arr = {16, 14, 9, 10, 7, 8, 3, 1, 4, 2};
+  int[] arr = {50, 30, 20, 15, 10, 8, 16};
 
   int[] newArr = new int[arr.length + 1];
 
