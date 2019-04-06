@@ -78,7 +78,27 @@ public class InOrderTraversal {
 
     System.out.println("After Insertion");
     InOrder(root);
+
+//    System.out.println("Deleting an element to binary tree");
+//    int deletionKey = 12;
+//    deletion(root,deletionKey);
   }
+
+//  private static void deletion(Node root, int deletionKey) {
+//
+//    Queue<Node> q = new LinkedList<Node>();
+//    q.add(root);
+//
+//    Node temp;
+//
+//    while(!q.isEmpty()){
+//      temp = q.peek();
+//      q.remove();
+//
+//
+//    }
+//
+//  }
 
   private static void insertion(Node root, int key) {
     Queue<Node> q = new LinkedList<Node>();
