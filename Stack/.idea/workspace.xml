@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../../PL_Venkat/exam/Project_templates/groovy" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../PL_Venkat/exam/Project_templates/java" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../PL_Venkat/exam/Project_templates/kotlin" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../PL_Venkat/exam/arismendi_saravana/assign4/java" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../PL_Venkat/exam/java" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../PL_Venkat/midterm2/java" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="105" />
+    <option name="y" value="31" />
+    <option name="width" value="1280" />
+    <option name="height" value="738" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558053050027" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+</project>
