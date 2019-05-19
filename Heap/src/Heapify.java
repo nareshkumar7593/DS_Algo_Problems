@@ -14,6 +14,48 @@ public class Heapify {
     }
     for(int ele : arr)
     System.out.println(ele);
+
+    System.out.println("Enter the element to be deleted");
+    int toDeleteValue = inputReader.nextInt();
+    deletion(arr,toDeleteValue);
+    for(int i = 0; i<arr.length - 1;i++){
+      System.out.println(arr[i]);
+    }
+  }
+
+  private static void deletion(int[] arr, int toDeleteValue) {
+    int i =0;
+    for(i =0; i<arr.length;i++){
+      if(arr[i] == toDeleteValue){
+        break;
+      }
+    }
+    arr[i] = arr[arr.length - 1];
+    int n = arr.length - 2;
+    int child1 = 2 * i + 1;
+    int child2 = 2 * i + 2;
+    while(child1 <= n && child2 <= n){
+      if(arr[i] > arr[child1] || arr[i] > arr[child2]){
+        if(arr[child1] < arr[child2]){
+          int temp = arr[child1];
+          arr[child1] = arr[i];
+          arr[i] = temp;
+          i = child1;
+          child1 = 2 * i + 1;
+          child2 = 2 * i + 2;
+        }
+        else{
+          int temp = arr[child2];
+          arr[child2] = arr[i];
+          arr[i] = temp;
+          i = child2;
+          child1 = 2 * i + 1;
+          child2 = 2 * i + 2;
+        }
+      }
+      else
+        break;
+    }
   }
 
   private static void insertion(int[] arr, int value,int index) {
