@@ -26,12 +26,10 @@ public class ImplementationOfStack {
   }
 
   public static void peek(int[] arr, int index, int topPtr){
-    if((topPtr - index + 1) > -1 && (topPtr - index + 1) < arr.length) {
-      System.out.println(arr[topPtr - index + 1]);
-    }
-    else{
+    if((topPtr - index + 1) < 0)
       System.out.println("Index out of Bounds");
-    }
+
+      System.out.println(arr[topPtr - index + 1]);
   }
 
   public static void isEmpty(int topPtr){
